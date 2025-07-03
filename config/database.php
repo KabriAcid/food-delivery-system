@@ -1,22 +1,5 @@
 <?php
-date_default_timezone_set('Africa/Lagos');
-
-// Error Reporting log
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-
-require __DIR__ . '/../vendor/autoload.php';
-
-use Dotenv\Dotenv;
-
-$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
-$dotenv->load();
-
-$DB_HOST = $_ENV['DB_HOST'];
-$DB_USER = $_ENV['DB_USER'];
-$DB_PASS = $_ENV['DB_PASS'];
-$DB_NAME = $_ENV['DB_NAME'];
+require __DIR__ . '/config.php';
 
 try {
     $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DB_NAME", $DB_USER, $DB_PASS, [
