@@ -42,36 +42,36 @@ if (isset($_POST['register'])) {
 
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-2">Register Page</h1>
+        <h1 class="text-center mb-4">Register Page</h1>
         <p class="text-center">This is the registration page for the Food Delivery System.</p>
-        <div class="row justify-content-center mt-3">
+        <div class="row justify-content-center">
             <div class="col-md-6">
-                <form action="" method="POST" class="registration-form border-0 p-4 rounded shadow-lg">
+                <form action="" method="POST" class="registration-form border p-4 rounded shadow-lg bg-light">
                     <div class="mb-3">
                         <label for="name" class="form-label">Full Name</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required>
+                        <input type="text" name="name" id="name" class="input-custom" placeholder="Full Name" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+                        <input type="email" name="email" id="email" class="input-custom" placeholder="Email Address" required>
                     </div>
                     <div class="mb-3">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone Number" required>
+                        <input type="text" name="phone" id="phone" class="input-custom" placeholder="Phone Number" required>
                     </div>
                     <div class="mb-3">
                         <label for="address" class="form-label">Delivery Address</label>
-                        <textarea name="address" id="address" class="form-control" placeholder="Delivery Address" required></textarea>
+                        <textarea name="address" id="address" class="textarea-custom" placeholder="Delivery Address" required></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                        <input type="password" name="password" id="password" class="input-custom" placeholder="Password" required>
                     </div>
                     <div class="mb-3">
                         <label for="confirm_password" class="form-label">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm Password" required>
+                        <input type="password" name="confirm_password" id="confirm_password" class="input-custom" placeholder="Confirm Password" required>
                     </div>
-                    <button type="submit" name="register" class="btn btn-primary w-100">Register</button>
+                    <button type="submit" name="register" class="btn-custom w-100">Register</button>
                 </form>
             </div>
         </div>
