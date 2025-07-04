@@ -1,0 +1,1 @@
+ <footer class="footer" style="font-size: 13px; text-align: center;">Deliver © 2023 - Online Food Delivering System </footer>
